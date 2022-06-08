@@ -33,11 +33,11 @@ namespace Project_Dien_Thoai.Controllers
                 string maRd = randomMa();
                 string fullname = kh.TenKH;
                 string email = kh.EmailKH;
-                string content = System.IO.File.ReadAllText(Server.MapPath("~/Areas/Admin/client/templateQMK/neworder.html"));
+                /*string content = System.IO.File.ReadAllText(Server.MapPath("~/Areas/Admin/client/templateQMK/neworder.html"));
                 content = content.Replace("{{Name}}", fullname);
                 content = content.Replace("{{Email}}", email);
                 content = content.Replace("{{MaXN}}", maRd);
-                new MailHelper().SendMail(email, "Mật Khẩu gửi từ nhóm MobileOnline", content);
+                new MailHelper().SendMail(email, "Mật Khẩu gửi từ nhóm MobileOnline", content);*/
                 taiKhoan.MatKhau = maRd;
                 db.SaveChanges();
                 strError = "Mật Khẩu Đã Được Gửi Đến Email của bạn, vui lòng kiểm tra email";

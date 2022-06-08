@@ -32,12 +32,12 @@ namespace Project_Dien_Thoai.Controllers
             {
                 if (matkhau == con_matkhau)
                 {
-                    string content = System.IO.File.ReadAllText(Server.MapPath("~/Areas/Admin/client/template/neworder.html"));
+                    /*string content = System.IO.File.ReadAllText(Server.MapPath("~/Areas/Admin/client/template/neworder.html"));
 
                     content = content.Replace("{{Name}}", fullname);
                     content = content.Replace("{{Email}}", email);
                     content = content.Replace("{{MaXN}}", maRd);
-                    new MailHelper().SendMail(email, "Mã xác nhận từ nhóm MobileOnline", content);
+                    new MailHelper().SendMail(email, "Mã xác nhận từ nhóm MobileOnline", content);*/
                     Session["MaKH"] = MaKH;
                     Session["User"] = userName;
                     Session["fullname"] = fullname;
